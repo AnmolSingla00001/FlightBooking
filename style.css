@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* overflow: scroll; */
+}
+.main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* overflow: scroll; */
+    /* background: linear-gradient(to right, #89CFF0, #4169E1); */
+    background-color: white;
+}
+.header{
+    position: relative;
+    width: auto;
+    /* height: 60px; */
+    height: 16vh;
+    display: block;
+    background-color: black;
+}
+.header1{
+    /* position: relative;
+    width: auto; */
+    /* height: 60px; */
+    /* height: 16vh; */
+    /* display: block; */
+    background-color: grey;
+}
+.inner_header{
+    width: 100%;
+    height: 100%;
+    display: block;
+    /* background-color: black; */
+}
+.logo_container{
+    height: 100%;
+    display: table;
+    float: left;
+}
+.logo_container h1{
+    height: 100%;
+    color:white;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: inherit;
+    padding-left: 30px;
+    font-size: 32px;
+    font-weight: 200;
+}
+.logo_container h1 span{
+    font-weight: 800;
+    padding-bottom: 20px;
+}
+
+.sub_header{
+    /* position: sticky; */
+    position: relative;
+    top: 0%;
+    width: max-content;
+    height: 16vh;
+    display: flex;
+    /* background-color: black; */
+    background: linear-gradient(to right,black, #595352);
+    color:white;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+
+}
+.inner_sub_header{
+    display: inline-block;
+    width: max-content;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    /* background-color: black; */
+}
+
+
+.radio{
+    display: block;
+    width: max-content;
+}
+
+.radio1{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.radio__label{
+    padding-left: 10px;
+}
+
+.from{
+    display: block;
+}
+.to{
+    display: block;
+}
+.departure__date{
+    display: block;
+}
+.return__date{
+    display: block;
+}
+.travellers{
+    display: block;
+}
+.search{
+    display: block;
+    width: 50px;
+}
+
+.content{
+    display: inline-block;
+    /* position: relative; */
+    top: 0%;
+    height: 100%;
+}
+
+.side_panel{
+    width: 240px;
+    height: 100%;
+    display: flex;
+    background-color: black;
+    /* background: linear-gradient(to right,black, #181616); */
+    color:white;
+    padding: 20px;
+    justify-content: center;
+}
+.inner_side_panel{
+    display: inline-block;
+}
+.price_range{
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.price_to{
+    margin-top: 10px;
+}
+
+.flight_options{
+    display: inline-block;
+    /* height: 100%; */
+    width: 900px;
+    /* display: block; */
+    /* overflow: scroll; */
+}
+
+.inner_flight_options{
+    display: inline-block;
+    width: 45%;
+    height: 100%;
+    /* background-color: yellowgreen; */
+}
+.oneway_flight_options{
+    display: block;
+    background-color: yellowgreen;
+}
+
+.return_flight_options{
+    display: block;
+    background-color: orangered;
+}
+
+.card{
+    width: 100%;
+}

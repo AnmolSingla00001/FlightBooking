@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .tbl {
+            border: 1px solid black;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyHigh.com</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+    <table style="width:100%">
+        <tr>
+            <td style="background-color: black;color: white">
+                <center>
+                    <h2>Sky<b>High</b></h2>
+                </center>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table style="background:linear-gradient(to right,black,#595352);color:white;width: 100%;">
+                    <tr>
+                        <td>
+                            <input type="radio" name="flightType" value="oneWay" id="oneway">
+                            <label class="radio__label" for="oneWay">One Way</label>
+                            <br />
+                            <input type="radio" name="flightType" value="return" id="return">
+                            <label class="radio__label" for="return">Return</label>
+                        </td>
+                        <td style="padding-left: 50px;">
+                            <label>From:</label>
+                            <br />
+                            <Select id="fromDL">
+                                <option value="">Select...</option>
+                                <option value="Pune">Pune</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Mumbai">Mumbai</option>
+                                <option value="Goa">Goa</option>
+                                <option value="Bangalore">Bangalore</option>
+                            </Select>
+                        </td>
+                        <td style="padding-left: 50px;">
+                            <label>To:</label>
+                            <br />
+                            <Select id="toDL">
+                                <option value="">Select...</option>
+                                <option value="Pune">Pune</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Mumbai">Mumbai</option>
+                                <option value="Goa">Goa</option>
+                                <option value="Bangalore">Bangalore</option>
+                            </Select>
+                        </td>
+                        <td style="padding-left: 50px;">
+                            <label for="departure">Departure:</label>
+                            <br />
+                            <input type="date" id="departure" min="15-07-2021" name="departure">
+                        </td>
+                        <td style="padding-left: 50px;">
+                            <label for="return">Return:</label>
+                            <br />
+                            <input type="date" id="return_date" name="return">
+                        </td>
+                        <td style="padding-left: 50px;">
+                            <label for="travellers">Travellers:</label>
+                            <br />
+                            <input type="number" id="travellers" min="1" max="10" name="travellers" class="travellers">
+                        </td>
+                        <td style="padding-left: 100px;">
+                            <br />
+                            <button type="Search" form="form1" value="Search" id="search"
+                                onclick="fun()">Search</button>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td style="height: 700px;background-color: black;vertical-align: top;text-align: center;">
+                            <table style="background-color:black;color:white;padding-right: 50px;width:400px;">
+                                <tr>
+                                    <td>
+                                        Price Range:
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Minimum: </label>
+                                        <br />
+                                        <input type="number" id="min" min="1000" max="99999" value="0">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Maximum: </label>
+                                        <br />
+                                        <input type="number" id="max" min="1000" max="99999" value="0">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Class: </label>
+                                        <br />
+                                        <Select id="flightClass">
+                                            <option value=1>Economy</option>
+                                            <option value=1.5>Premium Economy</option>
+                                            <option value=2>Business</option>
+                                            <option value=3>First Class</option>
+                                        </Select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="button" value="Apply" onclick="fn_btnFilter()">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <!-- <b>Total Amount:
+                                            <br />
+                                            26000 INR</b>
+                                        </h3> -->
+                                        <label style="font-weight: bold;">Total Amount: </label>
+                                        <label style="font-weight: bold;" id="lblTotal"> </label>
+                                        <label style="font-weight: bold;">INR </label>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="button" value="Book Now" onclick="fn_btnBook()">
+                                        <!-- <button type="Search" form="form1" value="Search" id="search"
+                                            onclick="fun()">Search</button> -->
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table
+                                style="color:white;width:400px;height: 700px;overflow: scroll;vertical-align: top;background-color: black;"
+                                class="city">
+                                <!-- <div class="city">
+                                </div> -->
+                            </table>
+                        </td>
+                        <td>
+                            <table
+                                style="color:white;width:400px;height: 700px;overflow: scroll;vertical-align: top;background-color: black;"
+                                class="city1">
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="app.js"></script>
+</body>
+
+</html>
